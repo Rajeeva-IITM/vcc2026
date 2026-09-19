@@ -1,13 +1,10 @@
 # VCC 2026 — Submission Builder
 
 A minimal repository for building a Virtual Cell Challenge **2026** submission
-from the 2026 control-cell data. It contains one standalone marimo notebook that
+from the 2026 control-cell data. It contains marimo notebook that
 reads the data, explores it, builds a baseline prediction, validates it against
-the submission spec, and writes the submission `.h5ad`.
+the submission spec, and writes the submission `.h5ad` file.
 
-This is the submission-only subset of the full `vcc` pipeline. Training, model
-architectures, hyperparameter tuning, and 2025 scoring live in that repository,
-not here.
 
 ## Setup
 
