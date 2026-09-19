@@ -86,6 +86,24 @@ fails loudly if any break):
 - no explicitly-stored zeros (they count against the cap);
 - exactly 400 cells per (context, target_gene).
 
+## About marimo notebooks
+
+The notebook is a [marimo](https://marimo.io) notebook, stored as a plain `.py`
+file (not `.ipynb`), so it diffs and version-controls like normal Python. A
+marimo notebook is **reactive**: cells form a dependency graph, and changing one
+cell automatically re-runs the cells that depend on it — there is no stale
+hidden state and no need to remember run order.
+
+Two ways to use it:
+
+- `marimo edit <file>` — open the interactive editor in the browser to read,
+  change, and step through cells.
+- `marimo run <file>` — execute it top to bottom (headless / as an app), no
+  editing.
+
+You can also run it as an ordinary script (`python <file>`) because of the
+`if __name__ == "__main__": app.run()` block at the bottom.
+
 ## Run
 
 ```bash
